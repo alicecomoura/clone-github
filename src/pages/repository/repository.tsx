@@ -5,5 +5,3 @@ import React from 'react';
 export const Repository = () => {
   return <div />;
 }
-
-export default Repository;
