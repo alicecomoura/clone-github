@@ -1,5 +1,7 @@
 import { ProfileData } from '../../components/profile-data/profile-data'
 import { RepoCard } from '../../components/repo-card/repo-card'
+import { RandomCalendar } from '../../components/random-calendar/random-calendar'
+
 
 import * as S from './styles';
 
@@ -37,6 +39,12 @@ export const Profile = () => {
               ))}
             </div>
           </S.RepoList>
+
+          <S.CalendarHeading>
+            Random calendar (do not represent actual data)
+          </S.CalendarHeading>
+
+          <RandomCalendar />
         </S.RightContent>
       </S.Main>
     </S.Container>
