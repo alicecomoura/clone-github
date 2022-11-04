@@ -1,9 +1,14 @@
-import React from 'react';
-
-// import { Container } from './styles';
+import { Container, GithubLogo, SearchForm } from './styles';
 
 export const Header = () => {
-  return <div />;
+  return (
+    <Container>
+      <GithubLogo />
+      <SearchForm>
+        <input placeholder="Search or jump to.." />
+      </SearchForm>
+    </Container>
+  );
 }
 
 export default Header;

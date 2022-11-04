@@ -4,6 +4,8 @@ import { Header } from './components/header/header'
 import { Profile } from './pages/profile/profile'
 import { Repository } from './pages/repository/repository'
 
+import { GlobalStyles } from './styles/global'
+
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +17,7 @@ function App() {
       </Routes>
 
       {/* <Footer /> */}
+      <GlobalStyles />
     </BrowserRouter>
   );
 }
