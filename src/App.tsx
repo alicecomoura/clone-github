@@ -2,6 +2,7 @@ import 'react-calendar-heatmap/dist/styles.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 
 import { Header } from './components/header/header'
+import { Footer } from './components/footer/footer'
 import { Profile } from './pages/profile/profile'
 import { Repository } from './pages/repository/repository'
 
@@ -17,7 +18,7 @@ function App() {
         <Route path="/:username/:reponame" element={<Repository />}/>
       </Routes>
 
-      {/* <Footer /> */}
+      <Footer />
       <GlobalStyles />
     </BrowserRouter>
   );
