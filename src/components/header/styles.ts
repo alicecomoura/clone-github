@@ -26,6 +26,8 @@ export const SearchForm = styled.form`
     padding: 7px 12px;
     width: 180px;
 
+    color: ${themes.icon};
+
     &:focus {
       width: 318px;
     }
