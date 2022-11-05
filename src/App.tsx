@@ -1,21 +1,22 @@
-import 'react-calendar-heatmap/dist/styles.css'
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import { Header } from './components/header/header'
-import { Footer } from './components/footer/footer'
-import { Profile } from './pages/profile/profile'
-import { Repository } from './pages/repository/repository'
+import "react-calendar-heatmap/dist/styles.css";
 
-import { GlobalStyles } from './styles/global'
+import { Header } from "./components/header/header";
+import { Footer } from "./components/footer/footer";
+import { Profile } from "./pages/profile/profile";
+import { Repository } from "./pages/repository/repository";
+
+import { GlobalStyles } from "./styles/global";
 
 function App() {
   return (
     <BrowserRouter>
-    <Header />
+      <Header />
       <Routes>
-        <Route path="/" element={<Profile />}/>
-        <Route path="/:username" element={<Profile />}/>
-        <Route path="/:username/:reponame" element={<Repository />}/>
+        <Route path="/" element={<Profile />} />
+        <Route path="/:username" element={<Profile />} />
+        <Route path="/:username/:reponame" element={<Repository />} />
       </Routes>
 
       <Footer />
