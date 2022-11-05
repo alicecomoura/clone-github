@@ -11,7 +11,7 @@ export const RepoCard = ({
   stars,
   forks,
 }: RepoCardProps) => {
-  const languageClass = language ? language.toLocaleLowerCase() : "other";
+  const languageClass = language ? language.toLowerCase() : "other";
 
   return (
     <S.Container>
